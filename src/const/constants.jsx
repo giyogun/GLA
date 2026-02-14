@@ -5,6 +5,7 @@ import project1 from '~/assets/images/project1.jpg';
 import event1 from '~/assets/images/event1.jpg';
 import event2 from '~/assets/images/event2.jpg';
 import event3 from '~/assets/images/event3.jpg';
+import daddo from '~/assets/images/daddo.jpg';
 import {
   Facebook,
   Twitter,
@@ -23,8 +24,8 @@ import {
 
 export const NAV_ITEMS = [
   { label: 'Home', href: '#', link: '/' },
-  { label: 'About Us', href: '#about' },
-  { label: 'Resources', href: '#resources' },
+  { label: 'About Us', href: '#about', link: '/about' },
+  { label: 'Resources', href: '#resources', link: '/resources' },
   { label: 'Outreach', href: '#outreach', link: '/outreach' },
   { label: 'Ministries', href: '#ministries' },
   { label: 'Give', href: '#give' },
@@ -72,6 +73,42 @@ export const SERMONS = [
     thumbnail: 'https://img.youtube.com/vi/VazbrmfTkok/sddefault.jpg',
     duration: '1:16:08',
     videoId: 'VazbrmfTkok',
+  },
+];
+
+export const FEATURED_SERMON = {
+  title: 'Faith in the faith of God',
+  author: 'Pr. John Doe',
+  date: 'July 23, 2023',
+  description:
+    "Experience God's power, heal, worship, and be transformed. This message explores the depths of what it means to trust God's own faithfulness when ours feels small.",
+  image: 'https://picsum.photos/seed/sermon1/1200/600',
+};
+
+export const RELATED_SERMONS = [
+  {
+    id: 'rs1',
+    title: 'Faith in the faith of God',
+    time: '45 Mins',
+    image: 'https://picsum.photos/seed/rs1/100/100',
+  },
+  {
+    id: 'rs2',
+    title: 'Faith in the faith of God',
+    time: '38 Mins',
+    image: 'https://picsum.photos/seed/rs2/100/100',
+  },
+  {
+    id: 'rs3',
+    title: 'Faith in the faith of God',
+    time: '52 Mins',
+    image: 'https://picsum.photos/seed/rs3/100/100',
+  },
+  {
+    id: 'rs4',
+    title: 'Faith in the faith of God',
+    time: '41 Mins',
+    image: 'https://picsum.photos/seed/rs4/100/100',
   },
 ];
 
@@ -317,4 +354,64 @@ export const EVENT_TYPES = [
   'Worship Night',
   'Outreach',
   'Seminar',
+];
+
+export const Icons = {
+  SmallPlay: () => (
+    <svg className='w-6 h-6' fill='currentColor' viewBox='0 0 20 20'>
+      <path
+        fillRule='evenodd'
+        d='M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z'
+        clipRule='evenodd'
+      />
+    </svg>
+  ),
+};
+
+export const RESOURCE_PAGE = [
+  {
+    id: '1',
+    title: 'By Faith Series',
+    category: 'The Wisdom Series',
+    speaker: 'Pr. Chris Moore',
+    date: 'July 21, 2023',
+    image: event2,
+    description: "Experience God's power through faith-led insights.",
+    type: 'Video',
+  },
+  {
+    id: '2',
+    title: 'By Faith Series',
+    category: 'The Wisdom Series',
+    speaker: 'Pr. Chris Moore',
+    date: 'July 21, 2023',
+    image: event2,
+    description: 'Walking in the miraculous through the Word.',
+    type: 'Video',
+  },
+  {
+    id: '3',
+    title: 'By Faith Series',
+    category: 'The Wisdom Series',
+    speaker: 'Pr. Chris Moore',
+    date: 'July 21, 2023',
+    image: event3,
+    description: 'Strength in the secret place of the Most High.',
+    type: 'Video',
+  },
+];
+
+export const LEADERSHIP = [
+  {
+    id: 1,
+    name: 'Pst Chingtok Ishaku',
+    role: "Global Lead Pastor, God-Life Assembly Int'l",
+    image: daddo,
+  },
+  {
+    id: 2,
+    name: 'Pst Sarah Chingtok',
+    role: 'Senior Pastor, God-Life Assembly, Jos',
+    image: 'https://picsum.photos/id/1027/600/600',
+  },
 ];

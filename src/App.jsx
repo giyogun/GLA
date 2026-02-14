@@ -4,6 +4,8 @@ import Home from './pages/Home';
 import EventList from './pages/EventList';
 import Contact from './pages/Contact';
 import MissionsPage from './pages/MissionsPage/MissionsPage';
+import ResourcesPage from './pages/ResourcesPage/ResourcesPage';
+import AboutPage from './pages/AboutPage';
 
 function App() {
   return (
@@ -11,9 +13,11 @@ function App() {
       <ScrollToTop />
       <Routes>
         <Route path='/' element={<Home />} />
+        <Route path='/about' element={<AboutPage />} />
         <Route path='/events' element={<EventList />} />
         <Route path='/contact' element={<Contact />} />
         <Route path='/outreach' element={<MissionsPage />} />
+        <Route path='/resources' element={<ResourcesPage />} />
       </Routes>
     </div>
   );

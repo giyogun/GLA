@@ -1,4 +1,4 @@
-import { ICONS } from '~/const/constants.js';
+import { ICONS } from '~/const/constants.jsx';
 import background from '~/assets/images/heroBg.jpg';
 import eventPic from '~/assets/images/eventPic.jpg';
 

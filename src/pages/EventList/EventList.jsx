@@ -4,7 +4,7 @@ import {
   ICONS,
   MONTHS,
   UPCOMING_EVENTS,
-} from '~/const/constants.js';
+} from '~/const/constants.jsx';
 import EventCard from './EventCard';
 import Layout from '~/wrapper/Layout';
 import EventTop from './EventTop';
