@@ -27,8 +27,8 @@ export const NAV_ITEMS = [
   { label: 'About Us', href: '#about', link: '/about' },
   { label: 'Resources', href: '#resources', link: '/resources' },
   { label: 'Outreach', href: '#outreach', link: '/outreach' },
-  { label: 'Ministries', href: '#ministries' },
-  { label: 'Give', href: '#give' },
+  // { label: 'Ministries', href: '#ministries' },
+  { label: 'Give', href: '#give', link: '/give' },
   { label: 'Events', href: '#events', link: '/events' },
 ];
 

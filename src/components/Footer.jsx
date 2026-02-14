@@ -137,7 +137,9 @@ export const Footer = () => {
               </li>
               <li className='flex gap-3 items-start'>
                 <MapPin className='w-5 h-5 text-primary shrink-0' />
-                <span>123 Faith Avenue, Grace City, GC 45000</span>
+                <span>
+                  Tabernacle of David, Behind Moneco Plaza, Yingi, Rayfield, Jos
+                </span>
               </li>
               <li className='flex gap-3 items-center'>
                 <Phone className='w-5 h-5 text-primary shrink-0' />
