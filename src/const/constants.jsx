@@ -167,64 +167,173 @@ export const UPCOMING_EVENTS = [
     image: event1,
     category: 'Conference',
     month: 'DEC',
+    startDate: 'Wednesday, December 9, 2026',
+    endDate: 'Friday, December 11, 2026',
+    speakers: [
+      {
+        name: 'Pst Chingtok Ishaku',
+        role: 'Lead Global Pastor, God-Life Assembly',
+        image: daddo,
+      },
+      {
+        name: 'Pst Chingtok Ishaku',
+        role: 'Lead Global Pastor, God-Life Assembly',
+        image: daddo,
+      },
+    ],
   },
   {
     id: '2',
     title: 'Faith & Favor Seminar',
     location: 'God-Life Assembly, Jos',
-    day: '09',
+    day: '12',
     description:
       'A dedicated time of learning and growth in the word. This seminar focuses on spiritual disciplines that invite divine favor into our lives.',
     image: event2,
     category: 'Seminar',
     month: 'DEC',
+    startDate: 'Wednesday, December 12, 2026',
+    endDate: 'Friday, December 14, 2026',
+    speakers: [
+      {
+        name: 'Pst Chingtok Ishaku',
+        role: 'Lead Global Pastor, God-Life Assembly',
+        image: daddo,
+      },
+      {
+        name: 'Pst Chingtok Ishaku',
+        role: 'Lead Global Pastor, God-Life Assembly',
+        image: daddo,
+      },
+    ],
   },
   {
     id: '3',
     title: 'Kingdom Advance Night',
     location: 'God-Life Assembly, Jos',
-    day: '09',
+    day: '15',
     description:
       'Prophetic worship night aimed at spiritual advancement and territorial dominion. Featuring guest ministers and our resident choir.',
     image: event3,
     category: 'Worship',
     month: 'DEC',
+    startDate: 'Wednesday, December 15, 2026',
+    endDate: 'Friday, December 17, 2026',
+    speakers: [
+      {
+        name: 'Pst Chingtok Ishaku',
+        role: 'Lead Global Pastor, God-Life Assembly',
+        image: daddo,
+      },
+      {
+        name: 'Pst Chingtok Ishaku',
+        role: 'Lead Global Pastor, God-Life Assembly',
+        image: daddo,
+      },
+    ],
   },
   {
     id: '4',
     title: 'Global Outreach 2026',
     location: 'God-Life Assembly, Jos',
-    day: '09',
+    day: '05',
     description:
       'Expanding our reach to the ends of the earth. Be part of the team bringing hope and the gospel message to the underserved communities.',
     image:
       'https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?q=80&w=2070&auto=format&fit=crop',
     category: 'Outreach',
     month: 'JAN',
+    startDate: 'Monday, January 5, 2026',
+    endDate: 'Wednesday, January 7, 2026',
+    speakers: [
+      {
+        name: 'Pst Chingtok Ishaku',
+        role: 'Lead Global Pastor, God-Life Assembly',
+        image: daddo,
+      },
+      {
+        name: 'Pst Chingtok Ishaku',
+        role: 'Lead Global Pastor, God-Life Assembly',
+        image: daddo,
+      },
+    ],
   },
   {
     id: '5',
     title: 'Ministers Empowerment',
     location: 'God-Life Assembly, Jos',
-    day: '09',
+    day: '18',
     description:
       'Refueling and re-arming the frontlines of ministry. An intensive workshop for those in active church leadership and pastoral roles.',
     image:
       'https://images.unsplash.com/photo-1559223607-a43c990c692c?q=80&w=2070&auto=format&fit=crop',
     category: 'Conference',
     month: 'JAN',
+    startDate: 'Monday, January 18, 2026',
+    endDate: 'Wednesday, January 20, 2026',
+    speakers: [
+      {
+        name: 'Pst Chingtok Ishaku',
+        role: 'Lead Global Pastor, God-Life Assembly',
+        image: daddo,
+      },
+      {
+        name: 'Pst Chingtok Ishaku',
+        role: 'Lead Global Pastor, God-Life Assembly',
+        image: daddo,
+      },
+    ],
   },
   {
     id: '6',
     title: 'Night of Wonders',
     location: 'God-Life Assembly, Jos',
-    day: '09',
+    day: '02',
     description:
       'Experience the supernatural. A night dedicated to healing, deliverance, and the miraculous power of God in a corporate gathering.',
     image:
       'https://images.unsplash.com/photo-1492684223066-81342ee5ff30?q=80&w=2070&auto=format&fit=crop',
     category: 'Worship',
     month: 'FEB',
+    startDate: 'Monday, February 2, 2026',
+    endDate: 'Wednesday, February 4, 2026',
+    speakers: [
+      {
+        name: 'Pst Chingtok Ishaku',
+        role: 'Lead Global Pastor, God-Life Assembly',
+        image: daddo,
+      },
+      {
+        name: 'Pst Chingtok Ishaku',
+        role: 'Lead Global Pastor, God-Life Assembly',
+        image: daddo,
+      },
+    ],
+  },
+  {
+    id: 'camp-meeting-2026',
+    title: 'Camp Meeting 2026',
+    location: '',
+    day: '18',
+    description:
+      'Discover upcoming conferences, worship nights, and community outreach events',
+    image: event1,
+    category: 'Conference',
+    month: 'AUG',
+    startDate: 'Wednesday, August 18, 2026',
+    endDate: 'Sunday, August 24, 2026',
+    speakers: [
+      {
+        name: 'Pst Chingtok Ishaku',
+        role: 'Lead Global Pastor, God-Life Assembly',
+        image: daddo,
+      },
+      {
+        name: 'Pst Chingtok Ishaku',
+        role: 'Lead Global Pastor, God-Life Assembly',
+        image: daddo,
+      },
+    ],
   },
 ];
 

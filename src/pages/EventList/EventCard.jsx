@@ -1,8 +1,12 @@
+import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 
 const EventCard = ({ event }) => {
   return (
-    <div className='bg-neutral-900 rounded-3xl overflow-hidden flex flex-col h-full shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1'>
+    <Link
+      to={`/events/${event.id}`}
+      className='bg-neutral-900 rounded-3xl overflow-hidden flex flex-col h-full shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1'
+    >
       <div className='relative h-56 md:h-64 overflow-hidden'>
         <img
           src={event.image}
@@ -28,14 +32,14 @@ const EventCard = ({ event }) => {
           {event.description}
         </p>
 
-        <button className='self-start text-[10px] font-black tracking-[0.2em] text-white/90 hover:text-orange-500 transition-colors flex items-center gap-2 group border-2 border-orange-500 p-2 rounded-2xl'>
+        <span className='self-start text-[10px] font-black tracking-[0.2em] text-white/90 hover:text-orange-500 transition-colors flex items-center gap-2 group/btn border-2 border-orange-500 p-2 rounded-2xl'>
           Register to attend
-          <span className='group-hover:translate-x-1 transition-transform'>
+          <span className='group-hover/btn:translate-x-1 transition-transform'>
             →
           </span>
-        </button>
+        </span>
       </div>
-    </div>
+    </Link>
   );
 };
 
