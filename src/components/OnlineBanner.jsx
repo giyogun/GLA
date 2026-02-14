@@ -39,6 +39,7 @@ const OnlineBanner = () => {
                 Watch Live Now
               </Button>
             </a>
+            {/* TODO: Wire up JOIN THE ONLINE FAMILY link — currently triggers nothing */}
             <div className='mt-2 text-xs text-gray-500 flex items-center justify-center gap-1 cursor-pointer hover:text-white transition-colors'>
               <span>JOIN THE ONLINE FAMILY</span>
               <span>→</span>

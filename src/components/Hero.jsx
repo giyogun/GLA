@@ -43,6 +43,7 @@ export const Hero = () => {
                 WATCH LIVE
               </Button>
             </a>
+            {/* TODO: Wire up VISIT US button — currently triggers nothing */}
             <button className='px-10 py-4 rounded-xl text-sm md:text-base font-bold uppercase tracking-wider text-white border-2 border-white/30 hover:bg-white hover:text-black transition-all duration-300'>
               VISIT US
             </button>

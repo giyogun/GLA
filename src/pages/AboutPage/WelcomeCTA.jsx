@@ -17,6 +17,7 @@ const WelcomeCTA = () => {
             Assembly International.
           </p>
           <div className='flex flex-wrap justify-center gap-4'>
+            {/* TODO: Wire up Plan Your Visit button — currently triggers nothing */}
             <Button
               size='lg'
               className='rounded-xl text-sm font-bold uppercase tracking-wider'

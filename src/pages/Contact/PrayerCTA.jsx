@@ -20,6 +20,7 @@ export function PrayerCTA() {
                 </p>
               </div>
 
+              {/* TODO: Wire up Submit a Prayer Request button — currently triggers nothing */}
               <button className='whitespace-nowrap bg-orange-600 hover:bg-orange-700 text-white font-bold py-5 px-10 rounded-2xl transition-all shadow-xl shadow-orange-900/20 active:scale-95 text-sm md:text-base tracking-wide'>
                 Submit a Prayer Request
               </button>

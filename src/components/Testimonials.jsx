@@ -35,6 +35,7 @@ const Testimonials = () => {
                 <span className='text-primary text-sm'>Lagos, Nigeria</span>
               </div>
 
+              {/* TODO: Wire up prev/next arrow buttons for testimonial carousel — currently trigger nothing */}
               <div className='flex gap-2'>
                 <button className='p-2 rounded-full border border-white/30 text-white hover:bg-white hover:text-slate-900 transition-colors'>
                   <ArrowLeft className='w-5 h-5' />

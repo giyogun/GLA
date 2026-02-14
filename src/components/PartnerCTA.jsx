@@ -6,6 +6,7 @@ const PartnerCTA = () => {
     <section className='relative h-[80vh] flex items-center justify-center overflow-hidden w-full'>
       {/* Background Image with Overlay */}
       <div className='absolute inset-0 z-0'>
+        {/* TODO: Replace placeholder image with real worship/church photo */}
         <img
           src='https://picsum.photos/id/441/1920/1080'
           alt='Hands raised in worship'
@@ -31,6 +32,7 @@ const PartnerCTA = () => {
             advance God’s work, meet needs, and bring hope to lives near and
             far.
           </p>
+          {/* TODO: Wire up GIVE NOW button — navigate to /give or open giving form */}
           <Button size='lg' className='px-10'>
             GIVE NOW
           </Button>

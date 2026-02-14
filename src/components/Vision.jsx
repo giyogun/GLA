@@ -48,6 +48,7 @@ const Vision = () => {
         </div>
 
         <div className='text-center'>
+          {/* TODO: Wire up About Us button — navigate to /about */}
           <Button variant='primary' size='lg'>
             About Us
           </Button>

@@ -39,17 +39,20 @@ const LocationFinder = () => {
                   <div className='w-6 h-6 rounded-full bg-gray-200 flex items-center justify-center'>
                     <Phone className='w-3 h-3' />
                   </div>
+                  {/* TODO: Replace placeholder phone number with real contact number */}
                   <span>234 800 000 0000</span>
                 </div>
                 <div className='flex items-center gap-3'>
                   <div className='w-6 h-6 rounded-full bg-gray-200 flex items-center justify-center'>
                     <Mail className='w-3 h-3' />
                   </div>
+                  {/* TODO: Replace placeholder email with real contact email */}
                   <span>support@godlifeassembly.com</span>
                 </div>
               </div>
             </div>
 
+            {/* TODO: Wire up prev/next arrow buttons for location carousel — currently trigger nothing */}
             <div className='flex gap-4 pt-6'>
               <button className='w-12 h-12 rounded-full border border-slate-900 flex items-center justify-center hover:bg-slate-100 transition-colors'>
                 <ArrowLeft className='w-5 h-5 text-slate-900' />

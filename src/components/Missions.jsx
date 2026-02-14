@@ -60,6 +60,7 @@ const Missions = () => {
         </div>
 
         <div className='mt-16 text-center'>
+          {/* TODO: Wire up DONATE button — navigate to /give or open donation form */}
           <Button className='bg-[#EA580C] text-white px-12 py-3 rounded-xl font-bold hover:bg-[#C2410C] shadow-lg shadow-orange-900/20 text-sm tracking-wide'>
             DONATE
           </Button>

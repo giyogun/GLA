@@ -71,6 +71,7 @@ const EventTop = () => {
               COMING NEXT ...
             </span>
 
+            {/* TODO: Replace hardcoded event title, date, and wire up Register button */}
             <h2 className='text-lg md:text-2xl font-black mb-3 leading-tight'>
               Faith in the faith of God
             </h2>
@@ -80,6 +81,7 @@ const EventTop = () => {
               <span>November 24th 2025</span>
             </div>
 
+            {/* TODO: Wire up Register button — currently triggers nothing */}
             <button className='bg-white text-gray-900 px-6 py-2.5 rounded-xl text-[10px] font-black hover:bg-neutral-100 transition-all uppercase tracking-wider shadow'>
               Register
             </button>

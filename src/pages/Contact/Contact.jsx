@@ -35,6 +35,7 @@ const Contact = () => {
 
   const handleSubmit = e => {
     e.preventDefault();
+    // TODO: Replace with real form submission (e.g., email service, backend API)
     alert('Message sent! Our tam will get back to you shortly.');
     console.log('Form Submitted:', formData);
   };

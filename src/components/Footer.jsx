@@ -31,27 +31,28 @@ export const Footer = () => {
               The God-Life Assembly has been called to raise a pure breed of
               believers
             </p>
+            {/* TODO: Replace all '#' hrefs below with real social media URLs */}
             <div className='flex gap-4'>
               <a
-                href='#'
+                href='#' // TODO: Add real Facebook URL
                 className='w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center hover:bg-primary transition-colors'
               >
                 <Facebook className='w-5 h-5' />
               </a>
               <a
-                href='#'
+                href='#' // TODO: Add real Instagram URL
                 className='w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center hover:bg-primary transition-colors'
               >
                 <Instagram className='w-5 h-5' />
               </a>
               <a
-                href='#'
+                href='#' // TODO: Add real YouTube URL
                 className='w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center hover:bg-primary transition-colors'
               >
                 <Youtube className='w-5 h-5' />
               </a>
               <a
-                href='#'
+                href='#' // TODO: Add real Twitter/X URL
                 className='w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center hover:bg-primary transition-colors'
               >
                 <Twitter className='w-5 h-5' />
@@ -63,6 +64,7 @@ export const Footer = () => {
             <h4 className='text-lg font-bold mb-6 text-primary transition-colors'>
               QUICK LINKS
             </h4>
+            {/* TODO: Replace all '#' hrefs below with real page routes */}
             <ul className='space-y-3 text-gray-400'>
               <li>
                 <a href='#' className='hover:text-primary transition-colors'>
@@ -96,6 +98,7 @@ export const Footer = () => {
             <h4 className='text-lg font-bold mb-6 text-primary transition-colors'>
               RESOURCES
             </h4>
+            {/* TODO: Replace all '#' hrefs below with real resource page routes */}
             <ul className='space-y-3 text-gray-400'>
               <li>
                 <a href='#' className='hover:text-primary transition-colors'>
@@ -124,6 +127,7 @@ export const Footer = () => {
             <h4 className='text-lg font-bold mb-6 text-primary transition-colors'>
               GET IN TOUCH
             </h4>
+            {/* TODO: Replace '#' hrefs with real routes (e.g., /contact for Prayer Request) */}
             <ul className='space-y-4 text-gray-400'>
               <li>
                 <a href='#' className='hover:text-primary transition-colors'>
@@ -137,16 +141,19 @@ export const Footer = () => {
               </li>
               <li className='flex gap-3 items-start'>
                 <MapPin className='w-5 h-5 text-primary shrink-0' />
+                {/* TODO: Verify this is the correct church address */}
                 <span>
                   Tabernacle of David, Behind Moneco Plaza, Yingi, Rayfield, Jos
                 </span>
               </li>
               <li className='flex gap-3 items-center'>
                 <Phone className='w-5 h-5 text-primary shrink-0' />
+                {/* TODO: Verify this is the correct phone number */}
                 <span>+234703975448</span>
               </li>
               <li className='flex gap-3 items-center'>
                 <Mail className='w-5 h-5 text-primary shrink-0' />
+                {/* TODO: Verify this is the correct email address */}
                 <span>godlifeassemblyjos@gmail.com</span>
               </li>
             </ul>
@@ -158,6 +165,7 @@ export const Footer = () => {
             &copy; {new Date().getFullYear()} God-Life Assembly. All rights
             reserved.
           </p>
+          {/* TODO: Add real Privacy Policy and Terms of Service pages/links */}
           <div className='flex gap-6'>
             <a href='#' className='hover:text-white'>
               Privacy Policy

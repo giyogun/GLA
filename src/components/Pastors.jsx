@@ -43,6 +43,7 @@ const Pastors = () => {
             </div>
 
             <div className='pt-4'>
+              {/* TODO: Wire up Meet Our Pastors button — navigate to /about or a leadership section */}
               <Button>Meet Our Pastors</Button>
             </div>
           </div>

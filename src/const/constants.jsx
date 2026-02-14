@@ -76,39 +76,41 @@ export const SERMONS = [
   },
 ];
 
+// TODO: Replace placeholder data with real featured sermon details
 export const FEATURED_SERMON = {
   title: 'Faith in the faith of God',
-  author: 'Pr. John Doe',
+  author: 'Pr. John Doe', // TODO: Replace generic author name with real pastor name
   date: 'July 23, 2023',
   description:
     "Experience God's power, heal, worship, and be transformed. This message explores the depths of what it means to trust God's own faithfulness when ours feels small.",
-  image: 'https://picsum.photos/seed/sermon1/1200/600',
+  image: 'https://picsum.photos/seed/sermon1/1200/600', // TODO: Replace placeholder image with real sermon image
 };
 
+// TODO: Replace with real related sermons — titles are all duplicates and images are placeholders
 export const RELATED_SERMONS = [
   {
     id: 'rs1',
-    title: 'Faith in the faith of God',
+    title: 'Faith in the faith of God', // TODO: Replace duplicate title with real sermon title
     time: '45 Mins',
-    image: 'https://picsum.photos/seed/rs1/100/100',
+    image: 'https://picsum.photos/seed/rs1/100/100', // TODO: Replace placeholder image
   },
   {
     id: 'rs2',
-    title: 'Faith in the faith of God',
+    title: 'Faith in the faith of God', // TODO: Replace duplicate title with real sermon title
     time: '38 Mins',
-    image: 'https://picsum.photos/seed/rs2/100/100',
+    image: 'https://picsum.photos/seed/rs2/100/100', // TODO: Replace placeholder image
   },
   {
     id: 'rs3',
-    title: 'Faith in the faith of God',
+    title: 'Faith in the faith of God', // TODO: Replace duplicate title with real sermon title
     time: '52 Mins',
-    image: 'https://picsum.photos/seed/rs3/100/100',
+    image: 'https://picsum.photos/seed/rs3/100/100', // TODO: Replace placeholder image
   },
   {
     id: 'rs4',
-    title: 'Faith in the faith of God',
+    title: 'Faith in the faith of God', // TODO: Replace duplicate title with real sermon title
     time: '41 Mins',
-    image: 'https://picsum.photos/seed/rs4/100/100',
+    image: 'https://picsum.photos/seed/rs4/100/100', // TODO: Replace placeholder image
   },
 ];
 
@@ -137,10 +139,11 @@ export const RESOURCES = [
   },
 ];
 
+// TODO: Add real project titles, unique descriptions, and distinct images for each project
 export const PROJECTS = [
   {
     id: 1,
-    title: '',
+    title: '', // TODO: Add real project title
     subtitle: 'A Pastor Chingtok Ishaku Initiative',
     description:
       'Grow and connect to a global community of believers walking in faith and purpose',
@@ -148,11 +151,11 @@ export const PROJECTS = [
   },
   {
     id: 2,
-    title: '',
+    title: '', // TODO: Add real project title
     subtitle: 'A Pastor Chingtok Ishaku Initiative',
     description:
-      'Grow and connect to a global community of believers walking in faith and purpose',
-    image: project1,
+      'Grow and connect to a global community of believers walking in faith and purpose', // TODO: Replace duplicate description
+    image: project1, // TODO: Replace with a distinct image for this project
   },
 ];
 
@@ -240,7 +243,7 @@ export const UPCOMING_EVENTS = [
     description:
       'Expanding our reach to the ends of the earth. Be part of the team bringing hope and the gospel message to the underserved communities.',
     image:
-      'https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?q=80&w=2070&auto=format&fit=crop',
+      'https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?q=80&w=2070&auto=format&fit=crop', // TODO: Replace stock photo with real event image
     category: 'Outreach',
     month: 'JAN',
     startDate: 'Monday, January 5, 2026',
@@ -266,7 +269,7 @@ export const UPCOMING_EVENTS = [
     description:
       'Refueling and re-arming the frontlines of ministry. An intensive workshop for those in active church leadership and pastoral roles.',
     image:
-      'https://images.unsplash.com/photo-1559223607-a43c990c692c?q=80&w=2070&auto=format&fit=crop',
+      'https://images.unsplash.com/photo-1559223607-a43c990c692c?q=80&w=2070&auto=format&fit=crop', // TODO: Replace stock photo with real event image
     category: 'Conference',
     month: 'JAN',
     startDate: 'Monday, January 18, 2026',
@@ -292,7 +295,7 @@ export const UPCOMING_EVENTS = [
     description:
       'Experience the supernatural. A night dedicated to healing, deliverance, and the miraculous power of God in a corporate gathering.',
     image:
-      'https://images.unsplash.com/photo-1492684223066-81342ee5ff30?q=80&w=2070&auto=format&fit=crop',
+      'https://images.unsplash.com/photo-1492684223066-81342ee5ff30?q=80&w=2070&auto=format&fit=crop', // TODO: Replace stock photo with real event image
     category: 'Worship',
     month: 'FEB',
     startDate: 'Monday, February 2, 2026',
@@ -313,7 +316,7 @@ export const UPCOMING_EVENTS = [
   {
     id: 'camp-meeting-2026',
     title: 'Camp Meeting 2026',
-    location: '',
+    location: '', // TODO: Add real event location
     day: '18',
     description:
       'Discover upcoming conferences, worship nights, and community outreach events',
@@ -337,6 +340,7 @@ export const UPCOMING_EVENTS = [
   },
 ];
 
+// TODO: Replace all picsum.photos placeholder images in MOCK_EVENTS with real event images
 export const MOCK_EVENTS = [
   {
     id: '1',
@@ -346,7 +350,7 @@ export const MOCK_EVENTS = [
     fullDate: 'December 9th 2025',
     description:
       'This conference is designed to equip believers, ministers, and leaders across with practical leadership strategies. Join us for an impactful session.',
-    image: 'https://picsum.photos/id/101/600/400',
+    image: 'https://picsum.photos/id/101/600/400', // TODO: Replace placeholder image
     category: 'Conference',
     month: 'December',
   },
@@ -477,33 +481,34 @@ export const Icons = {
   ),
 };
 
+// TODO: Replace with real resource entries — titles, speaker, category, and dates are all duplicated/generic
 export const RESOURCE_PAGE = [
   {
     id: '1',
-    title: 'By Faith Series',
-    category: 'The Wisdom Series',
-    speaker: 'Pr. Chris Moore',
-    date: 'July 21, 2023',
+    title: 'By Faith Series', // TODO: Replace with real resource title
+    category: 'The Wisdom Series', // TODO: Replace with real category
+    speaker: 'Pr. Chris Moore', // TODO: Replace generic speaker name with real speaker
+    date: 'July 21, 2023', // TODO: Replace with real date
     image: event2,
     description: "Experience God's power through faith-led insights.",
     type: 'Video',
   },
   {
     id: '2',
-    title: 'By Faith Series',
-    category: 'The Wisdom Series',
-    speaker: 'Pr. Chris Moore',
-    date: 'July 21, 2023',
-    image: event2,
+    title: 'By Faith Series', // TODO: Replace duplicate title
+    category: 'The Wisdom Series', // TODO: Replace duplicate category
+    speaker: 'Pr. Chris Moore', // TODO: Replace generic speaker name
+    date: 'July 21, 2023', // TODO: Replace duplicate date
+    image: event2, // TODO: Use a distinct image
     description: 'Walking in the miraculous through the Word.',
     type: 'Video',
   },
   {
     id: '3',
-    title: 'By Faith Series',
-    category: 'The Wisdom Series',
-    speaker: 'Pr. Chris Moore',
-    date: 'July 21, 2023',
+    title: 'By Faith Series', // TODO: Replace duplicate title
+    category: 'The Wisdom Series', // TODO: Replace duplicate category
+    speaker: 'Pr. Chris Moore', // TODO: Replace generic speaker name
+    date: 'July 21, 2023', // TODO: Replace duplicate date
     image: event3,
     description: 'Strength in the secret place of the Most High.',
     type: 'Video',
@@ -521,6 +526,6 @@ export const LEADERSHIP = [
     id: 2,
     name: 'Pst Sarah Chingtok',
     role: 'Senior Pastor, God-Life Assembly, Jos',
-    image: 'https://picsum.photos/id/1027/600/600',
+    image: 'https://picsum.photos/id/1027/600/600', // TODO: Replace placeholder image with real photo of Pst Sarah Chingtok
   },
 ];

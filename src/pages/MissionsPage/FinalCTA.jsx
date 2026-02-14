@@ -16,6 +16,7 @@ const FinalCTA = () => {
               Missions and outreach are not the work of a few. When we come
               together, we extend God&apos;s love further than we could alone.
             </p>
+            {/* TODO: Wire up Get Involved Today button — currently triggers nothing */}
             <button className='bg-[#FF6B00] hover:bg-[#e65a00] text-white px-10 py-4 rounded-lg font-bold transition-all transform hover:scale-105 active:scale-95 shadow-xl shadow-[#FF6B00]/20'>
               Get Involved Today
             </button>

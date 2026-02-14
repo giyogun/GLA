@@ -64,6 +64,7 @@ const BePart = () => {
           ))}
         </div>
 
+        {/* TODO: Wire up Support Missions button — currently triggers nothing */}
         <button className='bg-[#FF6B00] hover:bg-[#e65a00] text-white px-10 py-4 rounded-lg font-bold transition-all shadow-lg'>
           Support Missions
         </button>

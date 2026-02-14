@@ -54,6 +54,7 @@ const ResourcesPage = () => {
                   Access sermons, books, music, podcasts, and teaching materials
                   designed to help you grow spiritually.
                 </p>
+                {/* TODO: Wire up Browse All Resources button — currently triggers nothing */}
                 <button className='bg-primary text-white px-10 py-4 rounded-lg font-bold hover-bg-primary transition-all shadow-lg shadow-orange-200'>
                   Browse All Resources
                 </button>
@@ -209,6 +210,7 @@ const ResourcesPage = () => {
                   <div className='absolute left-4 top-1/2 -translate-y-1/2 text-gray-400'>
                     <Search />
                   </div>
+                  {/* TODO: Wire up Search button — onClick handler is commented out */}
                   <button
                     // onClick={handleSearch}
                     className='absolute right-2 top-2 bottom-2 bg-primary text-white px-6 rounded-lg font-bold text-sm'
@@ -220,6 +222,7 @@ const ResourcesPage = () => {
             </div>
 
             {/* Filters */}
+            {/* TODO: Wire up filter dropdowns (Subject, Speaker, Resource Type) — currently trigger nothing */}
             <div className='flex flex-wrap gap-4 mb-12'>
               {['Subject', 'Speaker', 'Resource Type'].map(filter => (
                 <div key={filter} className='relative group'>
@@ -251,6 +254,7 @@ const ResourcesPage = () => {
             </div>
 
             <div className='mt-16 text-center'>
+              {/* TODO: Wire up Load More button — currently triggers nothing */}
               <button className='border border-gray-200 px-12 py-4 rounded-xl font-bold text-gray-600 hover:bg-gray-50 transition-colors'>
                 Load More
               </button>
@@ -276,6 +280,7 @@ const ResourcesPage = () => {
                   practical teaching, faith conversations, and Spirit-led
                   insights designed for daily living on the go.
                 </p>
+                {/* TODO: Wire up LISTEN TO PODCAST button — link to Spotify or podcast page */}
                 <Button className='bg-primary text-white px-14 py-5  font-bold text-sm hover:bg-orange-600 shadow-xl shadow-orange-500/10 uppercase tracking-widest'>
                   LISTEN TO PODCAST
                 </Button>

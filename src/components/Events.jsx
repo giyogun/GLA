@@ -22,6 +22,7 @@ const Events = () => {
             Plan your <span className='text-primary'>visit</span> and <br />
             Stay in touch with
           </h2>
+          {/* TODO: Wire up prev/next arrow buttons for event carousel — currently trigger nothing */}
           <div className='hidden md:flex gap-2'>
             <button className='p-2 rounded md:rounded-lg border border-gray-200 hover:bg-gray-50 transition-colors'>
               <ArrowLeft className='w-4 h-4 text-gray-600' />

@@ -43,6 +43,7 @@ const GIVING_TYPES = [
 ];
 
 // ─── Impact Data ───
+// TODO: Replace placeholder impact stats with real/verified numbers
 const IMPACT_STATS = [
   {
     icon: Users,
@@ -370,6 +371,7 @@ const GiveFormSection = () => {
               )}
 
               {/* Give Button */}
+              {/* TODO: Wire up Give button to a real payment gateway — currently triggers nothing */}
               <Button
                 size='lg'
                 className='w-full justify-center text-sm font-black uppercase tracking-[0.15em] py-5'
@@ -456,8 +458,8 @@ const WaysToGiveSection = () => {
       description: 'Transfer directly to our church account.',
       details: [
         "God-Life Assembly Int'l",
-        'Zenith Bank — 1234567890',
-        'GTBank — 0987654321',
+        'Zenith Bank — 1234567890', // TODO: Replace placeholder account number with real bank details
+        'GTBank — 0987654321', // TODO: Replace placeholder account number with real bank details
       ],
     },
     {

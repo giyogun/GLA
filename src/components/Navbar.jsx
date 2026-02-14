@@ -41,6 +41,7 @@ export const Navbar = () => {
               isScrolled ? 'text-gray-300' : 'text-slate-600'
             }`}
           >
+            {/* TODO: Replace all '#' hrefs below with real routes/URLs */}
             <div className='flex gap-6'>
               <a href='#' className='hover:text-primary transition-colors'>
                 Find a Church
@@ -159,9 +160,11 @@ export const Navbar = () => {
             </NavLink>
           ))}
           <div className='flex flex-col gap-3 mt-4 border-t border-slate-800 pt-4'>
+            {/* TODO: Wire up mobile Watch Live button to YouTube live link */}
             <button className='flex items-center justify-center gap-2 px-5 py-3 rounded-lg border border-primary text-white font-bold'>
               Watch Live
             </button>
+            {/* TODO: Wire up mobile Connect button with onClick navigation to /contact */}
             <Button className='w-full justify-center rounded-lg'>
               Connect
             </Button>

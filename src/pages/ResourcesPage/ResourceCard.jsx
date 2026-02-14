@@ -11,12 +11,14 @@ const ResourceCard = ({ resource }) => {
         />
         <div className='absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent flex flex-col justify-end p-6'>
           <div className='mb-2'>
+            {/* TODO: Replace placeholder logo with real ministry/resource logo */}
             <img
               src='https://picsum.photos/seed/logo/40/40'
               className='w-8 h-8 rounded-full border border-white/50 mb-2'
               alt='ministry logo'
             />
           </div>
+          {/* TODO: Replace hardcoded text with dynamic resource data */}
           <h4 className='text-white font-bold text-lg leading-tight uppercase tracking-tight'>
             BY FAITH!
           </h4>

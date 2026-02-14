@@ -115,6 +115,7 @@ const EventDetails = () => {
                   </div>
                 </div>
 
+                {/* TODO: Wire up Register button — link to registration form or external URL */}
                 <Button
                   size='lg'
                   className='uppercase text-xs tracking-[0.15em] font-black'

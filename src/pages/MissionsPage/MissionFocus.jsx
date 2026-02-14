@@ -43,6 +43,7 @@ const MissionFocus = () => {
         </div>
 
         {/* Horizontal Gallery */}
+        {/* TODO: Replace all picsum.photos placeholder images below with real mission/outreach photos */}
         <div
           ref={scrollRef}
           className='overflow-x-auto scrollbar-hide'
