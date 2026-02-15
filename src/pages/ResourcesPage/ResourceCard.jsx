@@ -1,4 +1,5 @@
 import { Icons } from '~/const/constants';
+import PropTypes from 'prop-types';
 
 const ResourceCard = ({ resource }) => {
   return (
@@ -44,3 +45,14 @@ const ResourceCard = ({ resource }) => {
 };
 
 export default ResourceCard;
+
+// props validation
+ResourceCard.propTypes = {
+  resource: PropTypes.shape({
+    id: PropTypes.number.isRequired,
+    title: PropTypes.string.isRequired,
+    category: PropTypes.string.isRequired,
+    speaker: PropTypes.string.isRequired,
+    image: PropTypes.string.isRequired,
+  }).isRequired,
+};

@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Menu, X, Globe, Play } from 'lucide-react';
+import { motion, AnimatePresence } from 'framer-motion';
 import { Button } from './Button';
 import { NAV_ITEMS } from '~/const/constants';
 import logo from '~/assets/images/logo.png';
@@ -27,7 +28,9 @@ export const Navbar = () => {
 
   return (
     <nav
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-slate-900 shadow-md`}
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 lg:bg-slate-900 lg:shadow-md ${
+        isScrolled ? 'bg-slate-900 shadow-md' : 'bg-transparent'
+      }`}
     >
       {/* Top Utility Bar */}
       <div
@@ -41,7 +44,6 @@ export const Navbar = () => {
               isScrolled ? 'text-gray-300' : 'text-slate-600'
             }`}
           >
-            {/* TODO: Replace all '#' hrefs below with real routes/URLs */}
             <div className='flex gap-6'>
               <a href='#' className='hover:text-primary transition-colors'>
                 Find a Church
@@ -76,22 +78,7 @@ export const Navbar = () => {
             className='w-[108px] h-[60px] cursor-pointer'
             onClick={() => navigate('/')}
           />
-          <div className='flex items-center gap-2 text-white font-bold text-xl tracking-tight cursor-pointer shrink-0'>
-            {/* <div className='border-2 border-white rounded-full p-1'>
-              <Church className='w-5 h-5 text-white' />
-            </div>
-            <div className='flex flex-col leading-none'>
-              <span className='text-[10px] tracking-widest uppercase text-primary'>
-                The
-              </span>
-              <span className='text-sm font-extrabold tracking-wide'>
-                GOD-LIFE
-              </span>
-              <span className='text-[10px] tracking-widest uppercase opacity-80'>
-                Assembly
-              </span>
-            </div> */}
-          </div>
+          <div className='flex items-center gap-2 text-white font-bold text-xl tracking-tight cursor-pointer shrink-0'></div>
 
           {/* Desktop Nav - Centered & Spaced */}
           <div className='hidden lg:flex items-center justify-center flex-1 px-8'>
@@ -147,30 +134,66 @@ export const Navbar = () => {
       </div>
 
       {/* Mobile Menu Overlay */}
-      {isMobileMenuOpen && (
-        <div className='lg:hidden absolute top-full left-0 right-0 bg-slate-900 border-t border-slate-800 p-4 flex flex-col gap-4 shadow-xl h-screen'>
-          {NAV_ITEMS.map(item => (
-            <NavLink
-              key={item.label}
-              to={getPath(item.link)}
-              className='text-gray-300 hover:text-primary py-2 px-4 rounded-lg hover:bg-slate-800 transition-colors font-medium'
-              onClick={() => setIsMobileMenuOpen(false)}
-            >
-              {item.label}
-            </NavLink>
-          ))}
-          <div className='flex flex-col gap-3 mt-4 border-t border-slate-800 pt-4'>
-            {/* TODO: Wire up mobile Watch Live button to YouTube live link */}
-            <button className='flex items-center justify-center gap-2 px-5 py-3 rounded-lg border border-primary text-white font-bold'>
-              Watch Live
-            </button>
-            {/* TODO: Wire up mobile Connect button with onClick navigation to /contact */}
-            <Button className='w-full justify-center rounded-lg'>
-              Connect
-            </Button>
-          </div>
-        </div>
-      )}
+      <AnimatePresence>
+        {isMobileMenuOpen && (
+          <motion.div
+            initial={{ height: 0, opacity: 0 }}
+            animate={{ height: '100vh', opacity: 1 }}
+            exit={{ height: 0, opacity: 0 }}
+            transition={{ duration: 0.3, ease: 'easeInOut' }}
+            className='lg:hidden absolute top-full left-0 right-0 bg-slate-900 border-t border-slate-800 shadow-xl overflow-hidden'
+          >
+            <div className='p-4 flex flex-col gap-2'>
+              {NAV_ITEMS.map((item, i) => (
+                <motion.div
+                  key={item.label}
+                  initial={{ x: -30, opacity: 0 }}
+                  animate={{ x: 0, opacity: 1 }}
+                  exit={{ x: -30, opacity: 0 }}
+                  transition={{ duration: 0.25, delay: i * 0.05 }}
+                >
+                  <NavLink
+                    to={getPath(item.link)}
+                    className='block text-gray-300 hover:text-primary py-2 px-4 rounded-lg hover:bg-slate-800 transition-colors font-medium'
+                    onClick={() => setIsMobileMenuOpen(false)}
+                  >
+                    {item.label}
+                  </NavLink>
+                </motion.div>
+              ))}
+              <motion.div
+                initial={{ y: 20, opacity: 0 }}
+                animate={{ y: 0, opacity: 1 }}
+                exit={{ y: 20, opacity: 0 }}
+                transition={{ duration: 0.3, delay: NAV_ITEMS.length * 0.05 }}
+                className='flex flex-col gap-3 mt-4 border-t border-slate-800 pt-4'
+              >
+                <a
+                  href='https://www.youtube.com/@theglajos/streams'
+                  target='_blank'
+                  rel='noopener noreferrer'
+                  className='flex items-center justify-center gap-2 px-5 py-3 rounded-lg border border-primary text-white font-bold'
+                  onClick={() => setIsMobileMenuOpen(false)}
+                >
+                  <span>Watch Live</span>
+                  <div className='w-4 h-4 bg-primary rounded flex items-center justify-center'>
+                    <Play className='w-2 h-2 fill-white text-white' />
+                  </div>
+                </a>
+                <Button
+                  className='w-full justify-center rounded-lg'
+                  onClick={() => {
+                    navigate('/contact');
+                    setIsMobileMenuOpen(false);
+                  }}
+                >
+                  Connect
+                </Button>
+              </motion.div>
+            </div>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </nav>
   );
 };

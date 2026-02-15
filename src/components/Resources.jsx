@@ -1,8 +1,12 @@
 import { ArrowRight, ArrowLeft } from 'lucide-react';
+import { useNavigate } from 'react-router-dom';
 import { RESOURCES } from '~/const/constants';
+import { Button } from '~/components/Button';
 import MotionWrap from '~/wrapper/MotionWrap';
 
 const Resources = () => {
+  const navigate = useNavigate();
+
   return (
     <section className='py-20 bg-slate-50 w-full'>
       <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
@@ -96,23 +100,16 @@ const Resources = () => {
                   >
                     {resource.title}
                   </h3>
-
-                  {/* {resource.type === 'image' && (
-                    <div className='mt-4 flex gap-2'>
-                      <span className='w-8 h-8 rounded-full bg-green-500 flex items-center justify-center'>
-                        <PlayCircle className='w-5 h-5 text-black' />
-                      </span>
-                    </div>
-                  )} */}
                 </div>
               </div>
             </div>
           ))}
-          <div className='md:hidden relative rounded-3xl bg-gray-100 flex items-center justify-center aspect-[3/4]'>
-            <span className='text-gray-400 font-medium'>
-              View All Resources
-            </span>
-          </div>
+        </div>
+
+        <div className='flex justify-center mt-10'>
+          <Button size='lg' onClick={() => navigate('/resources')}>
+            View All Resources <ArrowRight className='w-5 h-5 ml-2' />
+          </Button>
         </div>
       </div>
     </section>

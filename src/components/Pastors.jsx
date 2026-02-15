@@ -1,10 +1,10 @@
 import { Button } from './Button';
-import pastors from '~/assets/images/pastors.png';
+import pastors from '~/assets/images/daddoMammo.png';
 import MotionWrap from '~/wrapper/MotionWrap';
 
 const Pastors = () => {
   return (
-    <section className=' bg-[#EFD7C9] w-full'>
+    <section className='py-24 bg-[#EFD7C9] w-full'>
       <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
         <div className='grid md:grid-cols-2 gap-8 lg:gap-12 items-center'>
           <div className='order-2 md:order-1 space-y-6'>
@@ -42,27 +42,12 @@ const Pastors = () => {
               </p>
             </div>
 
-            <div className='pt-4'>
+            <div className='pt-4 text-center md:text-left'>
               {/* TODO: Wire up Meet Our Pastors button — navigate to /about or a leadership section */}
               <Button>Meet Our Pastors</Button>
             </div>
           </div>
 
-          {/* <div className='order-1 md:order-2 relative'>
-            <div className='absolute inset-0 bg-primary/10 rounded-full transform translate-x-4 translate-y-4'></div>
-            <img
-              src='https://picsum.photos/id/64/800/800'
-              alt='Pastors Couple'
-              className='relative w-full aspect-square object-cover rounded-2xl shadow-2xl z-10'
-            />
-          </div> */}
-          {/* <div className='order-1 md:order-2 flex  -ml-32'>
-            <img
-              src={pastors}
-              alt='Pastors'
-              className='w-full max-w-xl object-contain'
-            />
-          </div> */}
           <div className='order-1 md:order-2 flex -ml-4'>
             <div className='w-full max-w-xl  overflow-hidden'>
               <img

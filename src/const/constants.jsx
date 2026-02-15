@@ -6,6 +6,7 @@ import event1 from '~/assets/images/event1.jpg';
 import event2 from '~/assets/images/event2.jpg';
 import event3 from '~/assets/images/event3.jpg';
 import daddo from '~/assets/images/daddo.jpg';
+import mammo from '~/assets/images/mammo.jpg';
 import {
   Facebook,
   Twitter,
@@ -526,6 +527,6 @@ export const LEADERSHIP = [
     id: 2,
     name: 'Pst Sarah Chingtok',
     role: 'Senior Pastor, God-Life Assembly, Jos',
-    image: 'https://picsum.photos/id/1027/600/600', // TODO: Replace placeholder image with real photo of Pst Sarah Chingtok
+    image: mammo,
   },
 ];

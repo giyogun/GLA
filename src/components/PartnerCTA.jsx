@@ -3,7 +3,7 @@ import MotionWrap from '~/wrapper/MotionWrap';
 
 const PartnerCTA = () => {
   return (
-    <section className='relative h-[80vh] flex items-center justify-center overflow-hidden w-full'>
+    <section className='relative min-h-[80vh] flex items-center justify-center overflow-hidden w-full py-24'>
       {/* Background Image with Overlay */}
       <div className='absolute inset-0 z-0'>
         {/* TODO: Replace placeholder image with real worship/church photo */}

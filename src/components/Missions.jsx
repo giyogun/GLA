@@ -1,9 +1,12 @@
 import { Button } from './Button';
 import { ArrowRight } from 'lucide-react';
+import { useNavigate } from 'react-router-dom';
 import { PROJECTS } from '~/const/constants';
 import MotionWrap from '~/wrapper/MotionWrap';
 
 const Missions = () => {
+  const navigate = useNavigate();
+
   return (
     <section className='py-24 bg-[#F8CCB0] rounded-[2.5rem] w-[80vw]'>
       {' '}
@@ -60,8 +63,10 @@ const Missions = () => {
         </div>
 
         <div className='mt-16 text-center'>
-          {/* TODO: Wire up DONATE button — navigate to /give or open donation form */}
-          <Button className='bg-[#EA580C] text-white px-12 py-3 rounded-xl font-bold hover:bg-[#C2410C] shadow-lg shadow-orange-900/20 text-sm tracking-wide'>
+          <Button
+            className='bg-[#EA580C] text-white px-12 py-3 rounded-xl font-bold hover:bg-[#C2410C] shadow-lg shadow-orange-900/20 text-sm tracking-wide'
+            onClick={() => navigate('/give')}
+          >
             DONATE
           </Button>
         </div>
