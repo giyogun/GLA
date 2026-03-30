@@ -1,0 +1,13 @@
+# File: church-web/wrangler.toml
+# Path: church-web/wrangler.toml
+# Description: Cloudflare Pages configuration for gla-app
+
+name = "gla-app"
+compatibility_date = "2026-02-15"
+pages_build_output_dir = "dist"
+
+[env.production]
+name = "gla-app"
+
+[env.preview]
+name = "gla-app-preview"

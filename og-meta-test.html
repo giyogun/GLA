@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OG Meta Tags - Quick Test</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #f5f5f5;
+        }
+        .header {
+            background: #F25C05;
+            color: white;
+            padding: 30px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        .header h1 {
+            margin: 0 0 10px 0;
+        }
+        .page-section {
+            background: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .page-section h2 {
+            color: #F25C05;
+            margin-top: 0;
+        }
+        .meta-info {
+            background: #f8f9fa;
+            padding: 15px;
+            border-left: 4px solid #F25C05;
+            margin: 10px 0;
+        }
+        .test-links {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 10px;
+            margin-top: 20px;
+        }
+        .test-link {
+            background: #F25C05;
+            color: white;
+            padding: 15px;
+            text-align: center;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        .test-link:hover {
+            background: #d94d04;
+        }
+        .url-input {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 2px solid #ddd;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+        .status {
+            display: inline-block;
+            padding: 5px 10px;
+            border-radius: 3px;
+            font-size: 12px;
+            font-weight: bold;
+        }
+        .status-success {
+            background: #d4edda;
+            color: #155724;
+        }
+        .checklist {
+            list-style: none;
+            padding: 0;
+        }
+        .checklist li {
+            padding: 10px;
+            margin: 5px 0;
+            background: #f8f9fa;
+            border-radius: 5px;
+        }
+        .checklist li:before {
+            content: "✅ ";
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>🎯 Open Graph Meta Tags - Implementation Test</h1>
+        <p>God-Life Assembly International Website</p>
+        <span class="status status-success">DEPLOYED</span>
+    </div>
+
+    <div class="page-section">
+        <h2>📱 Quick Test Your Pages</h2>
+        <p>Enter your page URL below and click on the test tools to verify your OG meta tags:</p>
+        
+        <input type="text" 
+               class="url-input" 
+               id="pageUrl" 
+               value="https://gla-app.pages.dev/"
+               placeholder="Enter your page URL">
+        
+        <div class="test-links">
+            <a href="#" class="test-link" id="facebookTest">
+                📘 Facebook Debugger
+            </a>
+            <a href="#" class="test-link" id="twitterTest">
+                🐦 Twitter Validator
+            </a>
+            <a href="#" class="test-link" id="linkedinTest">
+                💼 LinkedIn Inspector
+            </a>
+            <a href="#" class="test-link" id="ogTest">
+                🔍 OG Tag Tester
+            </a>
+        </div>
+    </div>
+
+    <div class="page-section">
+        <h2>✅ Pages with OG Meta Tags</h2>
+        <ul class="checklist">
+            <li><strong>Home Page</strong> - https://gla-app.pages.dev/</li>
+            <li><strong>About Page</strong> - https://gla-app.pages.dev/about</li>
+            <li><strong>Events List</strong> - https://gla-app.pages.dev/events</li>
+            <li><strong>Contact Page</strong> - https://gla-app.pages.dev/contact</li>
+            <li><strong>Missions/Outreach</strong> - https://gla-app.pages.dev/outreach</li>
+            <li><strong>Resources Page</strong> - https://gla-app.pages.dev/resources</li>
+            <li><strong>Give Page</strong> - https://gla-app.pages.dev/give</li>
+            <li><strong>Event Details</strong> - Dynamic meta tags per event</li>
+        </ul>
+    </div>
+
+    <div class="page-section">
+        <h2>🏷️ Meta Tags Implemented</h2>
+        
+        <div class="meta-info">
+            <h3>Standard SEO Tags</h3>
+            <ul>
+                <li>Title tag</li>
+                <li>Meta description</li>
+                <li>Meta keywords</li>
+                <li>Meta author</li>
+            </ul>
+        </div>
+
+        <div class="meta-info">
+            <h3>Open Graph Tags (Facebook, LinkedIn)</h3>
+            <ul>
+                <li>og:title</li>
+                <li>og:description</li>
+                <li>og:image</li>
+                <li>og:url</li>
+                <li>og:type</li>
+                <li>og:site_name</li>
+                <li>og:locale</li>
+            </ul>
+        </div>
+
+        <div class="meta-info">
+            <h3>Twitter Card Tags</h3>
+            <ul>
+                <li>twitter:card</li>
+                <li>twitter:title</li>
+                <li>twitter:description</li>
+                <li>twitter:image</li>
+                <li>twitter:site</li>
+                <li>twitter:creator</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="page-section">
+        <h2>📋 Testing Checklist</h2>
+        <ol>
+            <li>Test each page URL in Facebook Debugger</li>
+            <li>Verify images load correctly (1200x630px recommended)</li>
+            <li>Check that titles and descriptions are appropriate</li>
+            <li>Ensure Twitter cards display properly</li>
+            <li>Test on mobile devices</li>
+            <li>Share a test link on social media to verify</li>
+        </ol>
+    </div>
+
+    <div class="page-section">
+        <h2>🎨 Image Specifications</h2>
+        <div class="meta-info">
+            <p><strong>Recommended Size:</strong> 1200x630px (1.91:1 ratio)</p>
+            <p><strong>Minimum Size:</strong> 600x315px</p>
+            <p><strong>Maximum File Size:</strong> 8MB</p>
+            <p><strong>Format:</strong> JPG or PNG</p>
+            <p><strong>Important:</strong> Images must be accessible via HTTPS</p>
+        </div>
+    </div>
+
+    <script>
+        const urlInput = document.getElementById('pageUrl');
+        
+        document.getElementById('facebookTest').addEventListener('click', function(e) {
+            e.preventDefault();
+            const url = encodeURIComponent(urlInput.value);
+            window.open(`https://developers.facebook.com/tools/debug/?q=${url}`, '_blank');
+        });
+
+        document.getElementById('twitterTest').addEventListener('click', function(e) {
+            e.preventDefault();
+            window.open('https://cards-dev.twitter.com/validator', '_blank');
+        });
+
+        document.getElementById('linkedinTest').addEventListener('click', function(e) {
+            e.preventDefault();
+            const url = encodeURIComponent(urlInput.value);
+            window.open(`https://www.linkedin.com/post-inspector/inspect/${url}`, '_blank');
+        });
+
+        document.getElementById('ogTest').addEventListener('click', function(e) {
+            e.preventDefault();
+            const url = encodeURIComponent(urlInput.value);
+            window.open(`https://www.opengraph.xyz/url/${url}`, '_blank');
+        });
+    </script>
+</body>
+</html>

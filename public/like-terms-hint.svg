@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 280" role="img" aria-labelledby="like-terms-title like-terms-desc">
+  <title id="like-terms-title">Combining Like Terms</title>
+  <desc id="like-terms-desc">Visual demonstration showing 3x plus 2x equals 5x using green tiles</desc>
+  
+  <!-- Background -->
+  <rect width="500" height="280" fill="#f8f9fa" rx="8"/>
+  
+  <!-- Top Row: 3x + 2x -->
+  <g id="top-row">
+    <!-- Label -->
+    <text x="50" y="50" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#2c3e50">3x + 2x</text>
+    
+    <!-- 3x tiles (green) -->
+    <rect x="50" y="70" width="40" height="40" fill="#27ae60" stroke="#1e8449" stroke-width="2" rx="4"/>
+    <text x="70" y="96" font-family="Arial, sans-serif" font-size="18" fill="white" font-weight="bold" text-anchor="middle">x</text>
+    
+    <rect x="100" y="70" width="40" height="40" fill="#27ae60" stroke="#1e8449" stroke-width="2" rx="4"/>
+    <text x="120" y="96" font-family="Arial, sans-serif" font-size="18" fill="white" font-weight="bold" text-anchor="middle">x</text>
+    
+    <rect x="150" y="70" width="40" height="40" fill="#27ae60" stroke="#1e8449" stroke-width="2" rx="4"/>
+    <text x="170" y="96" font-family="Arial, sans-serif" font-size="18" fill="white" font-weight="bold" text-anchor="middle">x</text>
+    
+    <!-- Plus sign -->
+    <text x="210" y="96" font-family="Arial, sans-serif" font-size="28" fill="#34495e" font-weight="bold">+</text>
+    
+    <!-- 2x tiles (green) -->
+    <rect x="250" y="70" width="40" height="40" fill="#27ae60" stroke="#1e8449" stroke-width="2" rx="4"/>
+    <text x="270" y="96" font-family="Arial, sans-serif" font-size="18" fill="white" font-weight="bold" text-anchor="middle">x</text>
+    
+    <rect x="300" y="70" width="40" height="40" fill="#27ae60" stroke="#1e8449" stroke-width="2" rx="4"/>
+    <text x="320" y="96" font-family="Arial, sans-serif" font-size="18" fill="white" font-weight="bold" text-anchor="middle">x</text>
+  </g>
+  
+  <!-- Arrow pointing down -->
+  <g id="arrow">
+    <line x1="200" y1="130" x2="200" y2="165" stroke="#e74c3c" stroke-width="3" marker-end="url(#arrowhead)"/>
+    <defs>
+      <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="5" refY="5" orient="auto">
+        <polygon points="0 0, 10 5, 0 10" fill="#e74c3c"/>
+      </marker>
+    </defs>
+  </g>
+  
+  <!-- Bottom Row: 5x -->
+  <g id="bottom-row">
+    <!-- Label -->
+    <text x="50" y="200" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#2c3e50">5x</text>
+    
+    <!-- 5x tiles (green) -->
+    <rect x="50" y="215" width="40" height="40" fill="#27ae60" stroke="#1e8449" stroke-width="2" rx="4"/>
+    <text x="70" y="241" font-family="Arial, sans-serif" font-size="18" fill="white" font-weight="bold" text-anchor="middle">x</text>
+    
+    <rect x="100" y="215" width="40" height="40" fill="#27ae60" stroke="#1e8449" stroke-width="2" rx="4"/>
+    <text x="120" y="241" font-family="Arial, sans-serif" font-size="18" fill="white" font-weight="bold" text-anchor="middle">x</text>
+    
+    <rect x="150" y="215" width="40" height="40" fill="#27ae60" stroke="#1e8449" stroke-width="2" rx="4"/>
+    <text x="170" y="241" font-family="Arial, sans-serif" font-size="18" fill="white" font-weight="bold" text-anchor="middle">x</text>
+    
+    <rect x="200" y="215" width="40" height="40" fill="#27ae60" stroke="#1e8449" stroke-width="2" rx="4"/>
+    <text x="220" y="241" font-family="Arial, sans-serif" font-size="18" fill="white" font-weight="bold" text-anchor="middle">x</text>
+    
+    <rect x="250" y="215" width="40" height="40" fill="#27ae60" stroke="#1e8449" stroke-width="2" rx="4"/>
+    <text x="270" y="241" font-family="Arial, sans-serif" font-size="18" fill="white" font-weight="bold" text-anchor="middle">x</text>
+  </g>
+  
+  <!-- Explanation Label -->
+  <g id="label">
+    <rect x="340" y="110" width="145" height="60" fill="#3498db" stroke="#2980b9" stroke-width="2" rx="6"/>
+    <text x="412" y="132" font-family="Arial, sans-serif" font-size="13" fill="white" font-weight="bold" text-anchor="middle">Like terms</text>
+    <text x="412" y="148" font-family="Arial, sans-serif" font-size="12" fill="white" text-anchor="middle">(same variable)</text>
+    <text x="412" y="164" font-family="Arial, sans-serif" font-size="12" fill="white" text-anchor="middle">can be combined.</text>
+  </g>
+</svg>
