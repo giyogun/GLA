@@ -1,7 +1,9 @@
 import { ArrowRight } from 'lucide-react';
+import { useNavigate } from 'react-router-dom';
 import projectImage from '~/assets/images/yingiMissions.jpg';
 
 const FeedYingi = () => {
+  const navigate = useNavigate();
   return (
     <section className='py-24 bg-zinc-50'>
       <div className='max-w-7xl mx-auto px-6'>
@@ -20,12 +22,20 @@ const FeedYingi = () => {
               meeting physical needs while offering spiritual care and hope.
             </p>
             <div className='flex flex-wrap items-center gap-6'>
-              {/* TODO: Wire up Support Missions button — currently triggers nothing */}
-              <button className='bg-[#FF6B00] hover:bg-[#e65a00] text-white px-8 py-4 rounded-lg font-bold transition-all shadow-md'>
+              <button
+                onClick={() => navigate('/give')}
+                className='bg-[#FF6B00] hover:bg-[#e65a00] text-white px-8 py-4 rounded-lg font-bold transition-all shadow-md'
+              >
                 Support Missions
               </button>
-              {/* TODO: Wire up More Details button — currently triggers nothing */}
-              <button className='flex items-center gap-2 text-zinc-900 font-bold hover:text-[#FF6B00] transition-colors group'>
+              <button
+                onClick={() =>
+                  document
+                    .getElementById('be-part')
+                    ?.scrollIntoView({ behavior: 'smooth' })
+                }
+                className='flex items-center gap-2 text-zinc-900 font-bold hover:text-[#FF6B00] transition-colors group'
+              >
                 More Details
                 <ArrowRight
                   size={20}

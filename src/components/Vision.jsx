@@ -1,4 +1,5 @@
 import { Button } from './Button';
+import { Link } from 'react-router-dom';
 import image from '~/assets/images/worship_0.jpg';
 import image2 from '~/assets/images/worship_1.jpg';
 import image3 from '~/assets/images/worship_2.jpg';
@@ -48,10 +49,11 @@ const Vision = () => {
         </div>
 
         <div className='text-center'>
-          {/* TODO: Wire up About Us button — navigate to /about */}
-          <Button variant='primary' size='lg'>
-            About Us
-          </Button>
+          <Link to='/about'>
+            <Button variant='primary' size='lg'>
+              About Us
+            </Button>
+          </Link>
         </div>
       </div>
     </section>

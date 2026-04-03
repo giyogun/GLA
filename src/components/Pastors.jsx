@@ -4,27 +4,13 @@ import MotionWrap from '~/wrapper/MotionWrap';
 
 const Pastors = () => {
   return (
-    <section className='py-24 bg-[#EFD7C9] w-full'>
+    <section className='pt-4 pb-0 bg-[#EFD7C9] w-full relative overflow-hidden'>
       <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
-        <div className='grid md:grid-cols-2 gap-8 lg:gap-12 items-center'>
-          <div className='order-2 md:order-1 space-y-6'>
+        <div className='flex flex-col md:flex-row gap-8 lg:gap-12 items-end'>
+          <div className='order-2 md:order-1 space-y-4 flex-1 pb-6 md:pb-10 lg:pb-14'>
             <h2 className='text-3xl md:text-5xl font-bold text-slate-900 leading-tight'>
               A Message from Our <br />
-              <span className='relative inline-block'>
-                Beloved Pastors
-                <svg
-                  className='absolute w-full h-3 -bottom-1 left-0 text-primary opacity-40'
-                  viewBox='0 0 100 10'
-                  preserveAspectRatio='none'
-                >
-                  <path
-                    d='M0 5 Q 50 10 100 5'
-                    stroke='currentColor'
-                    strokeWidth='8'
-                    fill='none'
-                  />
-                </svg>
-              </span>
+              <span className='relative inline-block'>Beloved Pastors</span>
             </h2>
 
             <div className='space-y-4 text-gray-700 leading-relaxed'>
@@ -48,12 +34,12 @@ const Pastors = () => {
             </div>
           </div>
 
-          <div className='order-1 md:order-2 flex -ml-4'>
-            <div className='w-full max-w-xl  overflow-hidden'>
+          <div className='order-1 md:order-2 flex-1 w-full md:w-auto flex justify-center md:justify-end items-end overflow-hidden'>
+            <div className='relative w-full max-w-[420px] overflow-hidden'>
               <img
                 src={pastors}
                 alt='Pastors'
-                className='w-full h-full object-cover object-top aspect-square'
+                className='w-full h-auto block scale-[1.35] origin-top'
               />
             </div>
           </div>

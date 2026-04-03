@@ -1,16 +1,22 @@
 import { Button } from './Button';
+import { Link } from 'react-router-dom';
 import MotionWrap from '~/wrapper/MotionWrap';
+import give from '~/assets/images/giveNew.jpg';
 
 const PartnerCTA = () => {
   return (
-    <section className='relative min-h-[80vh] flex items-center justify-center overflow-hidden w-full py-24'>
+    <section className='relative min-h-screen flex items-center justify-center overflow-hidden w-full py-0'>
       {/* Background Image with Overlay */}
       <div className='absolute inset-0 z-0'>
-        {/* TODO: Replace placeholder image with real worship/church photo */}
         <img
-          src='https://picsum.photos/id/441/1920/1080'
+          src={give}
           alt='Hands raised in worship'
           className='w-full h-full object-cover'
+          style={{
+            objectPosition: '50% 88%',
+            transform: 'scale(1.9)',
+            transformOrigin: 'center bottom',
+          }}
         />
         <div className='absolute inset-0 bg-black/70' />
       </div>
@@ -32,14 +38,17 @@ const PartnerCTA = () => {
             advance God’s work, meet needs, and bring hope to lives near and
             far.
           </p>
-          {/* TODO: Wire up GIVE NOW button — navigate to /give or open giving form */}
-          <Button size='lg' className='px-10'>
-            GIVE NOW
-          </Button>
+          <Link to='/give'>
+            <Button size='lg' className='px-10'>
+              GIVE NOW
+            </Button>
+          </Link>
         </div>
       </div>
     </section>
   );
 };
 
-export default MotionWrap(PartnerCTA, '');
+const WrappedPartnerCTA = MotionWrap(PartnerCTA, '');
+
+export default WrappedPartnerCTA;

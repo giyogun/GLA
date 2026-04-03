@@ -16,7 +16,7 @@ const Hero = () => {
         <img
           src={background}
           alt='Church gathering'
-          className='w-full h-full object-cover object-center'
+          className='w-full h-full object-cover object-center  grayscale brightness-75'
         />
         <div className='absolute inset-0 bg-gradient-to-r from-black/80 via-black/60 to-black/40 z-10' />
       </div>

@@ -1,10 +1,11 @@
-import { ArrowRight, ArrowLeft, Phone, Mail } from 'lucide-react';
+import { ArrowRight, Phone, Mail } from 'lucide-react';
 import locationImage from '~/assets/images/locationFinder1.jpg';
 import MotionWrap from '~/wrapper/MotionWrap';
+import { Link } from 'react-router-dom';
 
 const LocationFinder = () => {
   return (
-    <section className='py-24 bg-[#F9F9F9]'>
+    <section id='location-finder' className='py-24 bg-[#F9F9F9]'>
       <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
         <div className='grid lg:grid-cols-2 gap-12 items-center'>
           {/* Left Content */}
@@ -28,7 +29,7 @@ const LocationFinder = () => {
 
             <div className='space-y-6 pt-2'>
               <h3 className='text-xl font-bold text-slate-900'>
-                God-Life Assembly Jos
+                God-Life Assembly
               </h3>
               <p className='text-gray-600 max-w-sm leading-relaxed text-sm'>
                 Raising a Pure Breed.
@@ -39,8 +40,8 @@ const LocationFinder = () => {
                   <div className='w-6 h-6 rounded-full bg-gray-200 flex items-center justify-center'>
                     <Phone className='w-3 h-3' />
                   </div>
-                  {/* TODO: Replace placeholder phone number with real contact number */}
-                  <span>234 800 000 0000</span>
+
+                  <span>+2348184402126</span>
                 </div>
                 <div className='flex items-center gap-3'>
                   <div className='w-6 h-6 rounded-full bg-gray-200 flex items-center justify-center'>
@@ -52,14 +53,14 @@ const LocationFinder = () => {
               </div>
             </div>
 
-            {/* TODO: Wire up prev/next arrow buttons for location carousel — currently trigger nothing */}
-            <div className='flex gap-4 pt-6'>
-              <button className='w-12 h-12 rounded-full border border-slate-900 flex items-center justify-center hover:bg-slate-100 transition-colors'>
-                <ArrowLeft className='w-5 h-5 text-slate-900' />
-              </button>
-              <button className='w-12 h-12 rounded-full bg-black text-white flex items-center justify-center hover:bg-primary transition-colors'>
-                <ArrowRight className='w-5 h-5' />
-              </button>
+            <div className='flex items-center gap-4 pt-6'>
+              <Link
+                to='/branches'
+                className='inline-flex items-center gap-2 bg-primary hover:bg-orange-600 text-white font-semibold px-6 py-3 rounded-full transition-all duration-300 shadow-lg shadow-orange-500/30 hover:shadow-orange-500/50 text-sm'
+              >
+                View All Branches
+                <ArrowRight className='w-4 h-4' />
+              </Link>
             </div>
           </div>
 

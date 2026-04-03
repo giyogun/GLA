@@ -1,4 +1,4 @@
-import background from '~/assets/images/heroBg.jpg';
+import background from '~/assets/images/heroNew.jpg';
 import PropTypes from 'prop-types';
 
 const CommonHero = ({ title, subtitle }) => {
@@ -8,8 +8,8 @@ const CommonHero = ({ title, subtitle }) => {
         <img
           src={background}
           alt='Pastor Preaching'
-          className='w-full h-full object-top object-cover '
-          style={{ height: '800px' }}
+          className='w-full h-full object-top object-cover  grayscale brightness-75'
+          // style={{ height: '800px' }}
         />
         {/* Gradient Overlay - Dark on left, transparent on right to show the man */}
         <div className='absolute inset-0 bg-gradient-to-r from-black via-black/60 to-transparent z-10' />

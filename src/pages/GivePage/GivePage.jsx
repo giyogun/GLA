@@ -456,11 +456,7 @@ const WaysToGiveSection = () => {
       icon: Landmark,
       title: 'Bank Transfer',
       description: 'Transfer directly to our church account.',
-      details: [
-        "God-Life Assembly Int'l",
-        'Zenith Bank — 1234567890', // TODO: Replace placeholder account number with real bank details
-        'GTBank — 0987654321', // TODO: Replace placeholder account number with real bank details
-      ],
+      details: ["God-Life Assembly Int'l", 'Access Bank — 0040255890'],
     },
     {
       icon: Smartphone,

@@ -1,12 +1,11 @@
+import { MapPin, Phone, Mail } from 'lucide-react';
 import {
   Facebook,
   Instagram,
   Youtube,
   Twitter,
-  MapPin,
-  Phone,
-  Mail,
-} from 'lucide-react';
+} from '~/components/SocialIcons';
+import { Link } from 'react-router-dom';
 import logo from '~/assets/images/logo.png';
 
 export const Footer = () => {
@@ -34,7 +33,7 @@ export const Footer = () => {
             {/* TODO: Replace all '#' hrefs below with real social media URLs */}
             <div className='flex gap-4'>
               <a
-                href='#' // TODO: Add real Facebook URL
+                href='https://www.facebook.com/TheGLAJos/' // TODO: Add real Facebook URL
                 className='w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center hover:bg-primary transition-colors'
               >
                 <Facebook className='w-5 h-5' />
@@ -64,30 +63,54 @@ export const Footer = () => {
             <h4 className='text-lg font-bold mb-6 text-primary transition-colors'>
               QUICK LINKS
             </h4>
-            {/* TODO: Replace all '#' hrefs below with real page routes */}
             <ul className='space-y-3 text-gray-400'>
               <li>
-                <a href='#' className='hover:text-primary transition-colors'>
+                <Link
+                  to='/about'
+                  className='hover:text-primary transition-colors'
+                >
                   About Us
-                </a>
+                </Link>
               </li>
               <li>
-                <a href='#' className='hover:text-primary transition-colors'>
+                <Link
+                  to='/give'
+                  className='hover:text-primary transition-colors'
+                >
                   Give
-                </a>
+                </Link>
               </li>
               <li>
-                <a href='#' className='hover:text-primary transition-colors'>
+                <Link
+                  to='/events'
+                  className='hover:text-primary transition-colors'
+                >
                   Events
-                </a>
+                </Link>
               </li>
               <li>
-                <a href='#' className='hover:text-primary transition-colors'>
+                <Link
+                  to='/branches'
+                  className='hover:text-primary transition-colors'
+                >
+                  Find a Branch
+                </Link>
+              </li>
+              {/* TODO: No dedicated page yet */}
+              <li>
+                <a
+                  href='#'
+                  className='hover:text-primary transition-colors cursor-not-allowed opacity-50'
+                >
                   Join a Ministry
                 </a>
               </li>
+              {/* TODO: No dedicated page yet */}
               <li>
-                <a href='#' className='hover:text-primary transition-colors'>
+                <a
+                  href='#'
+                  className='hover:text-primary transition-colors cursor-not-allowed opacity-50'
+                >
                   Projects
                 </a>
               </li>
@@ -98,25 +121,39 @@ export const Footer = () => {
             <h4 className='text-lg font-bold mb-6 text-primary transition-colors'>
               RESOURCES
             </h4>
-            {/* TODO: Replace all '#' hrefs below with real resource page routes */}
             <ul className='space-y-3 text-gray-400'>
+              {/* TODO: No dedicated page yet */}
               <li>
-                <a href='#' className='hover:text-primary transition-colors'>
+                <a
+                  href='#'
+                  className='hover:text-primary transition-colors cursor-not-allowed opacity-50'
+                >
                   Music Ministry
                 </a>
               </li>
+              {/* TODO: No dedicated page yet */}
               <li>
-                <a href='#' className='hover:text-primary transition-colors'>
+                <a
+                  href='#'
+                  className='hover:text-primary transition-colors cursor-not-allowed opacity-50'
+                >
                   Books
                 </a>
               </li>
               <li>
-                <a href='#' className='hover:text-primary transition-colors'>
+                <Link
+                  to='/resources'
+                  className='hover:text-primary transition-colors'
+                >
                   Sermons
-                </a>
+                </Link>
               </li>
+              {/* TODO: No dedicated page yet */}
               <li>
-                <a href='#' className='text-primary transition-colors'>
+                <a
+                  href='#'
+                  className='text-primary transition-colors cursor-not-allowed opacity-50'
+                >
                   LEGAL
                 </a>
               </li>
@@ -127,17 +164,22 @@ export const Footer = () => {
             <h4 className='text-lg font-bold mb-6 text-primary transition-colors'>
               GET IN TOUCH
             </h4>
-            {/* TODO: Replace '#' hrefs with real routes (e.g., /contact for Prayer Request) */}
             <ul className='space-y-4 text-gray-400'>
               <li>
-                <a href='#' className='hover:text-primary transition-colors'>
+                <Link
+                  to='/contact'
+                  className='hover:text-primary transition-colors'
+                >
                   Prayer Request
-                </a>
+                </Link>
               </li>
               <li>
-                <a href='#' className='hover:text-primary transition-colors'>
+                <Link
+                  to='/contact'
+                  className='hover:text-primary transition-colors'
+                >
                   Support/Enquiry
-                </a>
+                </Link>
               </li>
               <li className='flex gap-3 items-start'>
                 <MapPin className='w-5 h-5 text-primary shrink-0' />
@@ -148,8 +190,8 @@ export const Footer = () => {
               </li>
               <li className='flex gap-3 items-center'>
                 <Phone className='w-5 h-5 text-primary shrink-0' />
-                {/* TODO: Verify this is the correct phone number */}
-                <span>+234703975448</span>
+
+                <span>+2348184402126</span>
               </li>
               <li className='flex gap-3 items-center'>
                 <Mail className='w-5 h-5 text-primary shrink-0' />

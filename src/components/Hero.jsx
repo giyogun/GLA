@@ -1,5 +1,5 @@
 import { Button } from './Button';
-import background from '~/assets/images/heroBg.jpg';
+import background from '~/assets/images/heroNew.jpg';
 
 export const Hero = () => {
   return (
@@ -9,10 +9,10 @@ export const Hero = () => {
         <img
           src={background}
           alt='Pastor Preaching'
-          className='w-full h-full object-cover object-center'
+          className='w-full h-full object-cover grayscale brightness-75 object-center'
         />
         {/* Gradient Overlay - Dark on left, transparent on right to show the man */}
-        <div className='absolute inset-0 bg-gradient-to-r from-black via-black/60 to-transparent z-10' />
+        <div className='absolute inset-0 bg-gradient-to-r from-black via-black/75 to-transparent z-10' />
       </div>
 
       <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-20 w-full'>
@@ -43,8 +43,14 @@ export const Hero = () => {
                 WATCH LIVE
               </Button>
             </a>
-            {/* TODO: Wire up VISIT US button — currently triggers nothing */}
-            <button className='px-10 py-4 rounded-xl text-sm md:text-base font-bold uppercase tracking-wider text-white border-2 border-white/30 hover:bg-white hover:text-black transition-all duration-300'>
+            <button
+              onClick={() =>
+                document
+                  .getElementById('location-finder')
+                  ?.scrollIntoView({ behavior: 'smooth' })
+              }
+              className='px-10 py-4 rounded-xl text-sm md:text-base font-bold uppercase tracking-wider text-white border-2 border-white/30 hover:bg-white hover:text-black transition-all duration-300'
+            >
               VISIT US
             </button>
           </div>

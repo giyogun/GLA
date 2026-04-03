@@ -1,6 +1,8 @@
 import background from '~/assets/images/MissionsBg.jpg';
+import { useNavigate } from 'react-router-dom';
 
 const Hero = () => {
+  const navigate = useNavigate();
   return (
     <section className='relative h-screen min-h-[600px] flex items-center overflow-hidden'>
       {/* Background Image with Overlay */}
@@ -22,8 +24,10 @@ const Hero = () => {
             We serve real people, meet practical needs, and proclaim the Gospel
             in tangible ways.
           </p>
-          {/* TODO: Wire up Support a Mission button — navigate to /give or a missions form */}
-          <button className='bg-[#FF6B00] hover:bg-[#e65a00] text-white px-8 py-4 rounded-lg font-bold transition-all duration-300 transform hover:scale-105 active:scale-95 shadow-lg'>
+          <button
+            onClick={() => navigate('/give')}
+            className='bg-[#FF6B00] hover:bg-[#e65a00] text-white px-8 py-4 rounded-lg font-bold transition-all duration-300 transform hover:scale-105 active:scale-95 shadow-lg'
+          >
             Support a Mission
           </button>
         </div>

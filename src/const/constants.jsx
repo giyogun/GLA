@@ -8,10 +8,6 @@ import event3 from '~/assets/images/event3.jpg';
 import daddo from '~/assets/images/daddo.jpg';
 import mammo from '~/assets/images/mammo.jpg';
 import {
-  Facebook,
-  Twitter,
-  Instagram,
-  Youtube,
   Play,
   ChevronDown,
   Calendar,
@@ -22,6 +18,12 @@ import {
   Mail,
   Phone,
 } from 'lucide-react';
+import {
+  Facebook,
+  Twitter,
+  Instagram,
+  Youtube,
+} from '~/components/SocialIcons';
 
 export const NAV_ITEMS = [
   { label: 'Home', href: '#', link: '/' },
@@ -31,6 +33,7 @@ export const NAV_ITEMS = [
   // { label: 'Ministries', href: '#ministries' },
   { label: 'Give', href: '#give', link: '/give' },
   { label: 'Events', href: '#events', link: '/events' },
+  { label: 'Branches', href: '#branches', link: '/branches' },
 ];
 
 export const SERMONS = [
@@ -136,7 +139,7 @@ export const RESOURCES = [
     subtitle: 'Podcast',
     image: resource3,
     type: 'image',
-    link: 'https://open.spotify.com/show/3hMej9FPx7V8BcdZBC7gK7?si=4ccf4d216d384194',
+    link: 'https://open.spotify.com/show/3hMej9FPx7V8BcdZBC7gK7',
   },
 ];
 
@@ -528,5 +531,128 @@ export const LEADERSHIP = [
     name: 'Pst Sarah Chingtok',
     role: 'Senior Pastor, God-Life Assembly, Jos',
     image: mammo,
+  },
+];
+
+export const TESTIMONIALS = [
+  {
+    id: 1,
+    quote:
+      "God Life Assembly became more than a church for me, it became home. Through the Word, the worship, and the love of the people here, my faith has grown stronger than ever. I've found purpose, healing, and family.",
+    name: 'Esther A.',
+    location: 'Lagos, Nigeria',
+  },
+  {
+    id: 2,
+    quote:
+      "I walked into GLA broken and hopeless, but the atmosphere of worship and the power of the Word lifted me. Today I stand as a testimony of God's restoring grace. This church truly changed my life.",
+    name: 'David O.',
+    location: 'Abuja, Nigeria',
+  },
+  {
+    id: 3,
+    quote:
+      "The teachings here are deep, practical, and life-transforming. Every service feels like a personal encounter with God. I'm grateful for a community that genuinely cares and walks with you through every season.",
+    name: 'Grace M.',
+    location: 'Jos, Nigeria',
+  },
+  {
+    id: 4,
+    quote:
+      "Joining God Life Assembly was the best decision I ever made. The fellowship is warm, the leadership is godly, and the mission to impact lives is real. I've grown spiritually in ways I never imagined.",
+    name: 'Samuel T.',
+    location: 'Port Harcourt, Nigeria',
+  },
+];
+
+export const BRANCHES = [
+  {
+    id: 'jos',
+    name: 'Jos Branch',
+    label: 'Headquarters',
+    city: 'Jos',
+    state: 'Plateau State',
+    address:
+      'Tabernacle of David behind Moneco Plaza, Yingi, Jos, Plateau State',
+    lat: 9.86431019476658,
+    lng: 8.892366166336288,
+    isHQ: true,
+    pastor: 'Pastor Sarah Chingtok',
+  },
+  {
+    id: 'abuja',
+    name: 'Abuja Branch',
+    city: 'Abuja',
+    state: 'FCT',
+    address:
+      "Arts and Craft Block, Maryam Babaginda Women's Development Centre, Abuja",
+    lat: 9.049622443913455,
+    lng: 7.490953495160813,
+    pastor: 'Pastor Dan Sarki',
+  },
+  {
+    id: 'minna',
+    name: 'Minna Branch',
+    city: 'Minna',
+    state: 'Niger State',
+    address:
+      'Justice Idris Legbo Kutigi International Conference Centre Opposite Government House, Minna',
+    lat: 9.630680008949932,
+    lng: 6.537113295168673,
+    pastor: 'Pastor Reuben Azael',
+  },
+  {
+    id: 'zaria',
+    name: 'Zaria Branch',
+    city: 'Zaria',
+    state: 'Kaduna State',
+    address:
+      'Gethsemane, No. 1 Life Street, Palladan, Zaria, Kaduna State, Nigeria',
+    lat: 11.144582012423,
+    lng: 7.6831611783256815,
+    pastor: 'Pastor Joel Wamba',
+  },
+  {
+    id: 'makurdi',
+    name: 'Makurdi Branch',
+    city: 'Makurdi',
+    state: 'Benue State',
+    address:
+      '3rd Floor (Right Wing), Victoria Atorough Tyough Complex, opposite Access Bank, Wurukum roundabout, Makurdi, Benue State',
+    lat: 7.72427086813154,
+    lng: 8.545750998715818,
+    pastor: 'Pastor Terver Achubu',
+  },
+  {
+    id: 'abakaliki',
+    name: 'Abakaliki Branch',
+    city: 'Abakaliki',
+    state: 'Ebonyi State',
+    address:
+      'Excelsior Suite & Lounge Auditorium (043 Hotel) One Road Behind Super-Nedo, Abakaliki',
+    lat: 6.311313456795808,
+    lng: 8.101727563921255,
+    pastor: 'Pastor George Legba',
+  },
+  {
+    id: 'lagos',
+    name: 'Lagos Branch',
+    city: 'Lagos',
+    state: 'Lagos State',
+    address:
+      'Block 2, Briscoe Ford Centre, Plot 94 The Providence St, Lekki Phase 1, Lagos 106104, Lagos',
+    lat: 6.431535981182439,
+    lng: 3.4611080951310895,
+    pastor: 'Pastor Josiah Gaude',
+  },
+  {
+    id: 'kano',
+    name: 'Kano Branch',
+    city: 'Kano',
+    state: 'Kano State',
+    address: 'Tony Cheta Schools, Zungeru Road, Kano State',
+    lat: 12.027932627437238,
+    lng: 8.53711151054953,
+    pastor: 'Pastor Ada Onee',
   },
 ];

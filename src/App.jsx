@@ -8,6 +8,7 @@ import ResourcesPage from './pages/ResourcesPage/ResourcesPage';
 import AboutPage from './pages/AboutPage';
 import EventDetails from './pages/EventDetails';
 import GivePage from './pages/GivePage';
+import BranchesPage from './pages/BranchesPage';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         <Route path='/outreach' element={<MissionsPage />} />
         <Route path='/resources' element={<ResourcesPage />} />
         <Route path='/give' element={<GivePage />} />
+        <Route path='/branches' element={<BranchesPage />} />
       </Routes>
     </div>
   );

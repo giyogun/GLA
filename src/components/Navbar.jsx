@@ -45,9 +45,12 @@ export const Navbar = () => {
             }`}
           >
             <div className='flex gap-6'>
-              <a href='#' className='hover:text-primary transition-colors'>
+              <NavLink
+                to='/branches'
+                className='hover:text-primary transition-colors'
+              >
                 Find a Church
-              </a>
+              </NavLink>
               <a href='#' className='hover:text-primary transition-colors'>
                 Music
               </a>

@@ -1,9 +1,8 @@
 import { ICONS } from '~/const/constants.jsx';
-import background from '~/assets/images/heroBg.jpg';
+import background from '~/assets/images/heroNew.jpg';
 import eventPic from '~/assets/images/eventPic.jpg';
 
 const EventTop = () => {
-  console.log(background, 'back');
   return (
     <section
       className='relative bg-neutral-900 pt-20 mb-32 min-h-[800px]
@@ -17,7 +16,7 @@ const EventTop = () => {
         <img
           src={background}
           alt='Pastor Preaching'
-          className='w-full h-full object-top object-cover '
+          className='w-full h-full object-top object-cover  grayscale brightness-75'
         />
         {/* Gradient Overlay - Dark on left, transparent on right to show the man */}
         <div className='absolute inset-0 bg-gradient-to-r from-black via-black/60 to-transparent z-10' />

@@ -280,10 +280,15 @@ const ResourcesPage = () => {
                   practical teaching, faith conversations, and Spirit-led
                   insights designed for daily living on the go.
                 </p>
-                {/* TODO: Wire up LISTEN TO PODCAST button — link to Spotify or podcast page */}
-                <Button className='bg-primary text-white px-14 py-5  font-bold text-sm hover:bg-orange-600 shadow-xl shadow-orange-500/10 uppercase tracking-widest'>
-                  LISTEN TO PODCAST
-                </Button>
+                <a
+                  href='https://open.spotify.com/show/3hMej9FPx7V8BcdZBC7gK7'
+                  target='_blank'
+                  rel='noopener noreferrer'
+                >
+                  <Button className='bg-primary text-white px-14 py-5  font-bold text-sm hover:bg-orange-600 shadow-xl shadow-orange-500/10 uppercase tracking-widest'>
+                    LISTEN TO PODCAST
+                  </Button>
+                </a>
               </div>
 
               <div className='flex-1 w-full lg:w-auto flex justify-center lg:justify-end items-end h-full overflow-hidden'>

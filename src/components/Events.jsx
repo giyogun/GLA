@@ -1,4 +1,5 @@
 // import { UPCOMING_EVENTS } from '../constants';
+import { useRef } from 'react';
 import { Button } from './Button';
 import { ArrowRight, ArrowLeft } from 'lucide-react';
 import { UPCOMING_EVENTS } from '~/const/constants';
@@ -7,6 +8,19 @@ import MotionWrap from '~/wrapper/MotionWrap';
 
 const Events = () => {
   const navigate = useNavigate();
+  const scrollRef = useRef(null);
+
+  const scroll = direction => {
+    if (!scrollRef.current) return;
+    const cardWidth =
+      scrollRef.current.querySelector('div')?.offsetWidth || 400;
+    const gap = 24; // gap-6 = 1.5rem = 24px
+    const scrollAmount = cardWidth + gap;
+    scrollRef.current.scrollBy({
+      left: direction === 'left' ? -scrollAmount : scrollAmount,
+      behavior: 'smooth',
+    });
+  };
 
   return (
     <section className='py-20 bg-white' id='events'>
@@ -22,22 +36,32 @@ const Events = () => {
             Plan your <span className='text-primary'>visit</span> and <br />
             Stay in touch with
           </h2>
-          {/* TODO: Wire up prev/next arrow buttons for event carousel — currently trigger nothing */}
           <div className='hidden md:flex gap-2'>
-            <button className='p-2 rounded md:rounded-lg border border-gray-200 hover:bg-gray-50 transition-colors'>
+            <button
+              onClick={() => scroll('left')}
+              className='p-2 rounded md:rounded-lg border border-gray-200 hover:bg-gray-50 transition-colors'
+            >
               <ArrowLeft className='w-4 h-4 text-gray-600' />
             </button>
-            <button className='p-2 rounded md:rounded-lg bg-black text-white hover:bg-slate-800 transition-colors'>
+            <button
+              onClick={() => scroll('right')}
+              className='p-2 rounded md:rounded-lg bg-black text-white hover:bg-slate-800 transition-colors'
+            >
               <ArrowRight className='w-4 h-4' />
             </button>
           </div>
         </div>
 
-        <div className='grid md:grid-cols-3 gap-6'>
-          {UPCOMING_EVENTS.slice(0, 3).map(event => (
+        <div
+          ref={scrollRef}
+          className='flex gap-6 overflow-x-auto scroll-smooth snap-x snap-mandatory pb-4 -mx-4 px-4 scrollbar-hide'
+          style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
+        >
+          {UPCOMING_EVENTS.map(event => (
             <div
               key={event.id}
-              className='group relative rounded-2xl overflow-hidden bg-slate-900 aspect-[4/5] shadow-lg cursor-pointer'
+              className='group relative rounded-2xl overflow-hidden bg-slate-900 aspect-[4/5] shadow-lg cursor-pointer flex-shrink-0 w-[85%] sm:w-[45%] md:w-[calc(33.333%-1rem)] snap-start'
+              onClick={() => navigate(`/events/${event.id}`)}
             >
               <img
                 src={event.image}

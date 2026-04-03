@@ -2,6 +2,7 @@ import pray from '~/assets/images/pray.jpg';
 import give from '~/assets/images/give.jpg';
 import serve from '~/assets/images/serve.jpg';
 import PropTypes from 'prop-types';
+import { useNavigate } from 'react-router-dom';
 
 const MissionCard = ({ title, description, imageUrl }) => (
   <div className='relative h-[400px] group overflow-hidden rounded-3xl shadow-md'>
@@ -26,6 +27,7 @@ MissionCard.propTypes = {
 };
 
 const BePart = () => {
+  const navigate = useNavigate();
   const cards = [
     {
       title: 'Pray',
@@ -48,7 +50,7 @@ const BePart = () => {
   ];
 
   return (
-    <section className='py-24 bg-white'>
+    <section id='be-part' className='py-24 bg-white'>
       <div className='max-w-7xl mx-auto px-6 text-center'>
         <h2 className='text-4xl font-extrabold text-zinc-900 mb-6'>
           Be Part of the Mission
@@ -64,8 +66,10 @@ const BePart = () => {
           ))}
         </div>
 
-        {/* TODO: Wire up Support Missions button — currently triggers nothing */}
-        <button className='bg-[#FF6B00] hover:bg-[#e65a00] text-white px-10 py-4 rounded-lg font-bold transition-all shadow-lg'>
+        <button
+          onClick={() => navigate('/give')}
+          className='bg-[#FF6B00] hover:bg-[#e65a00] text-white px-10 py-4 rounded-lg font-bold transition-all shadow-lg'
+        >
           Support Missions
         </button>
       </div>
